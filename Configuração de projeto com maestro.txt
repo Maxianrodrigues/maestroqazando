@@ -1,0 +1,37 @@
+Configuração de projeto com maestro
+
+1º baixar os binários do do link: https://github.com/mobile-dev-inc/maestro/releases/latest/download/maestro.zip
+
+2º Criar uma pasta config onde vamos extrair os binários do maestro:
+   criamos a pasta maestroconfig dentro de Documents
+C:\Users\maxia\Documents\maestroconfig\maestro\bin
+
+3º Setar a variável de ambiente com os binários do maestro via cmd ou diretamente em variáveis de ambiente:
+setx PATH "%PATH%;C:\Users\maxia\Documents\maestroconfig\maestro\bin"
+
+4º Criar uma pasta do projeto de automação:
+C:\Users\maxia\Documents\maestroAutomacao
+
+5º Via visual studio code, abrir o projeto
+
+6º realizar o download do exemplo de automação do maestro via terminal do vs code:
+executar comando: maestro download-samples
+
+7º Após o download do samples, entrar na pasta samples via terminal:
+cd ./samples
+
+obs: os comandos só são reconhecidos dentro dessa pasta
+
+8º comando maestro studio para abrir o inspector do maestro:
+no terminal: maestro studio
+
+9º para manter o inspector aberto, no vs code abra um novo terminal
+
+10º para executar um teste execute:
+ex: maestro test android-flow.yaml
+android-flow.yaml é o arquivo com cenário de teste
+
+obs: pode ocorrer erros na execução caso o inspecto esteja aberto
+feche e execute o teste
+
+11: para encontrar o appId, basta abrir o inspector e clicar na borda do app para pegar o id do app
