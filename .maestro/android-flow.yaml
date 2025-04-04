@@ -1,0 +1,39 @@
+appId: com.qazandoqafood
+tags:
+  - android
+  - passing
+---
+- launchApp
+- tapOn:
+    id: "email"
+- inputText: "teste@teste.com"
+- tapOn:
+    id: "password"
+- inputText: 123456
+- tapOn: "ENTRAR"
+- tapOn: "Selecione seu endereço..."
+- tapOn:
+    id: "android:id/button1"
+- tapOn: "Pastelaria da Maria"
+- tapOn:
+    id: "add-item-buttom"
+    index: 0
+- tapOn:
+    id: "add-item-buttom"
+    index: 1
+- tapOn:
+    id: "open-cart-button"
+- tapOn:
+    id: "back"
+- tapOn:
+    id: "open-cart-button"
+- tapOn:
+    id: "confirm-order-button"
+- tapOn:
+    id: "do-order-button"
+- tapOn:
+    id: "android:id/button1"
+- "scroll"
+- tapOn: "Dinheiro"
+- tapOn:
+    id: "do-order-button"
